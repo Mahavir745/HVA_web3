@@ -1,0 +1,15 @@
+.news-heading{
+  text-decoration: underline;
+  text-align: center;
+}
+
+p{
+  line-height: 1.6;
+  color: #100e0e
+}
+
+#wrap{
+  padding: 1%;
+  background-color: rgb(230, 230, 221);
+  font-family: 'Times New Roman', Times, serif;
+}

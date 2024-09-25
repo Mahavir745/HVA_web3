@@ -1,0 +1,17 @@
+h3{
+  font-size: 24px;
+  font-weight: bold;
+}
+dt{
+  font-weight: bold;
+}
+#about{
+  font-style: italic;
+  text-align: justify;
+}
+
+p{
+  background-color:#f5f5dc;
+  padding: 1%;
+  line-height: 1.8;
+}

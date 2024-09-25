@@ -1,0 +1,37 @@
+.container{
+    border: 2px dashed black;
+    width: 500px;
+    margin: auto;
+    display: flex;
+}
+
+.box{
+    box-sizing: border-box;
+    background-color: #c3dbeb;
+    border: 2px solid #608BA8;
+    height: 100px;
+}
+
+.box1,.box2,.box3{
+    /* flex-basis: 100px; */
+    flex-basis: 200px;
+    flex-shrink: 0;
+}
+
+.box1{
+    flex-grow: 2;
+    flex-shrink: 1;
+
+}
+
+.box2{
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.box3{
+    flex-grow: 1;
+    flex-shrink: 2;
+}
+
+/*! when we apply both basis and grow, then the minimum width of flex-box is 100px, and when we uses grow it's take width acoording to the container, but one thing is that 100px of width is minimum */

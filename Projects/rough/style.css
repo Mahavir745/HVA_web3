@@ -1,0 +1,32 @@
+.container{
+  display: flex;
+  #child1{
+    width: 240px;
+    height: 100vh;
+    border: 2px solid red;
+  }
+  #child2{
+    width: 800px;
+    height: 100vh;
+    border: 1px solid red;
+    overflow-y: scroll;
+
+    .child_items{
+      visibility: hidden;
+      scale: .8;
+      padding: 30px;
+      transition: all 1s linear;
+    }
+
+    .child_items p:hover{
+      background-color: yellow;
+      transition: all 2s linear;
+    }
+
+
+  }
+  #child2:hover .child_items{
+    visibility: visible;
+    scale: 1;
+  }
+}

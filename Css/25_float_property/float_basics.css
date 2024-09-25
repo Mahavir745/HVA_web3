@@ -1,0 +1,14 @@
+.float-left{
+    float: left;
+}
+
+.float-right{
+    float: right;
+}
+
+.second-paragraph{
+    /* clear: left; */
+    /* clear: right
+     */
+     clear: right;
+}

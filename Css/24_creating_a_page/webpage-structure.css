@@ -1,0 +1,37 @@
+
+.column-2,.column-3{
+display:inline-block;
+height: 200px;
+border: 1px solid #ddd;
+padding: 10px;
+box-sizing: border-box;
+background-color: #f0f0f0;
+}
+
+.column-2{
+  width: 49.89%;
+  margin: 0;
+
+}
+.row{
+  /* display: flex; */
+  width: 100%;
+  border: 1px solid red;
+}
+
+.column-3{
+  width: 33%;
+}
+
+.header,.footer,.main-content{
+  border: 2px solid #000;
+  width: 100%;
+}
+
+.header,.footer{
+  background-color: #4CAF50;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  margin-bottom: 20px;
+} 

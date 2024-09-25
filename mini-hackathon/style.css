@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: ir */
+}
+
+:root{
+    --font-col-1: #3C3030;
+    --font-col-2: #D02424;
+    --font-col-3:#FDFDFA;
+    --element-col-1: #E84848;
+    --element-col-2: #FDFDFA;
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+
+
+.header-container{
+    width: 100%;
+    margin-top: 32px;
+    h1{
+        font-size: 84px;
+        color: var(--font-col-1);
+        line-height: 140%;
+        font-weight: 400;
+        text-align: center;
+        svg{
+            margin:0px 4px;
+        }
+    }
+    div{
+        hr{
+            width: 100%;
+            margin-bottom: 7px;
+        }
+    }
+
+    .input-field{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 32px 0px 57px 0px;
+        /* border: 1px solid red; */
+
+        div{
+            
+            display:flex;
+            border: 1px solid rgb(60, 48, 48,0.3);
+            svg{
+                width: 32px;
+                margin: 13px 0px 8px 15px;
+                height: 32px;
+                flex-shrink: 0;
+                /* fill: var(--element-col-2); */
+
+            }
+    
+            input{
+                width: 226px;
+                border:none;
+                font-size: 20px;
+                padding-left:10px;
+
+            }
+            input:focus{
+                outline: none;
+            }
+            button{
+                padding: 17px 13px 16px 22px;
+                border: none;
+                font-size: 20px;
+                cursor: pointer;
+                font-weight: 400;
+                color: var(--element-col-2);
+                background-color: var(--element-col-1);
+            }
+        }
+
+    }
+
+}
+
+main{
+    .news-headline{
+    color: var(--font-col-2);
+    font-family: "Inria Sans";
+    font-size: 20px;
+    /* width: 910px; */
+    position: relative;
+    left: -1%;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -0.4px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    }
+}
+.main-container{
+    width: 910px;
+    height: 1387px;
+    margin: 89px 0px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10px auto auto auto;
+
+
+    .child{
+        display: grid;
+        place-content: center;
+        grid-template-columns: repeat(3,250px);
+        grid-template-rows:auto;
+        /* border: 1px solid blue; */
+        margin-bottom: 96px;
+        gap: 20px;
+
+        div{
+            overflow: hidden;
+            /* border: 1px solid; */
+
+            img{
+                width: 250px;
+                height: 120px;
+            }
+            h4{
+                margin: 16px 0px;
+                font-size: 18px;
+                line-height: 140%;
+                font-family: "Inknut Antiqua", serif;
+            }
+            p{
+                margin-bottom: 16px;
+            }
+            /* span::after{
+                content: "-->";
+                font-weight: 700;
+                color: var(--font-col-2);
+                line-height: 140%; 
+                font-family: "Inter", sans-serif;
+                margin-left: 10px;
+                text-decoration-line: underline;
+            } */
+            span{
+
+                button{
+
+                    border: none;
+                    background-color: transparent;
+                    a{
+                    font-weight: 700;
+                    color: var(--font-col-2);
+                    line-height: 140%; 
+                    font-family: "Inter", sans-serif;
+                    margin-left: 10px;
+                    text-decoration-line: underline;
+                    }
+                }
+
+            }
+        }
+    }
+
+
+}
+
+.footer-container{
+    text-align: center;
+ section{
+    display: inline-block;
+    margin-top: 57px;
+    margin-bottom: 59px;
+    font-family: "Inria Serif";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+ }
+}
+
+
+/*! Media query start */
+
+
+@media screen and (max-width:980px) {
+    .main-container{
+        .news-headline{
+            left: -1%;
+        }
+        .child{
+            grid-template-columns:204px 204px 204px;
+        }
+    }
+} 
+
+@media screen and (max-width:680px) {
+    .main-container{
+
+        width: 100%;
+        margin: 10px 0px;
+        height: auto;
+        .child{
+            grid-template-columns:264px 264px;
+            margin-bottom: 0px;
+            div{
+            margin-bottom: 64px;
+                
+            img{
+                width: 100%;
+            }
+            }
+        }
+    }
+} 
+@media screen and (max-width:580px) {
+
+    .header-container{
+        h1{
+            font-size: 74px;
+            svg{
+                margin:0px 4px;
+            }
+        }
+    }
+    main{
+        .news-headline{
+            margin-left: 1.5%;
+        }
+    }
+    .main-container{
+
+        width: 100%;
+        margin: 10px 0px;
+        height: auto;
+        .child{
+            grid-template-columns:244px 244px;
+            div{
+            img{
+                width: 100%;
+            }
+            }
+        }
+    }
+} 
+
+@media screen and (max-width:480px) {
+    
+    .header-container{
+        h1{
+        font-size: 35px;
+    }
+    svg{
+        /* margin:0px 4px; */
+        width: 25px;
+        height: 25px;
+    }
+    div{
+        hr{
+            margin-bottom: 4px;
+        }
+    }
+    }
+
+}
+
+@media screen and (max-width:480px) {
+    .main-container{
+
+        width: 100%;
+        margin: 10px 0px;
+        height: auto;
+        .child{
+            grid-template-columns:364px;
+            margin-bottom: 0px;
+            div{
+            margin-bottom: 64px;
+                
+            img{
+                width: 364px;
+            }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:480px) {
+    .footer-container{
+        p{
+            width: 181px;
+        }
+    }
+}
+
