@@ -5,13 +5,22 @@ value = 0
 
 while(i<len(arr)):
     a = 1
-    while(a<arr[i]):
+    found = False
+    
+    while(a<=arr[i]):
         if(arr[i]==a*a):
             value = arr[i]
+            found = True
             break
         a+=1
+    
+    if(found):
+        break
     i+=1
 
-print(sum)
+if(value!=0):
+    print(value)
+else:
+    print("NO")
 
-#todo: time-complexity: O(n)
+#todo: time-complexity: O(n log n)

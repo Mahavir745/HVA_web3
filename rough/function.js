@@ -49,7 +49,7 @@ let object = {
 };
 
 object.greet = function() {
-  return `Hello, my name is ${this.name} and I am in class ${this.class}.`;
+  return `Hellbo, my name is ${this.name} and I am in class ${this.class}.`;
 };
 
 console.log(object); 
