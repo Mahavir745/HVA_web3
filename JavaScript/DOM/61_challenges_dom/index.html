@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenges DOM</title>
+</head>
+<style>
+  .bg_change{
+    background-color: red;
+  }
+</style>
+<body>
+  <form action="#" method="post">
+    <table>
+    <tr>
+    <th><label for="name">Name: </label></th>
+    <td><input type="text" id="name"></td>
+    </tr>
+    <tr>
+    <th><label for="contact">Contact</label></th>
+    <td><input type="number" id="contact"></td>
+    </tr>
+    <tr>
+    <th><label for="email">Email</label></th>
+    <td><input type="email" name="email" id="email"></td>
+    </tr>
+    <tr>
+    <th></th>
+    <td><button type="submit" id="submit_btn">submit</button></td>
+    </tr>
+  </table>
+  </form>
+  <br>
+  <hr>
+
+  <div>toggle background color 1</div>
+  <div>toggle background color 2</div>
+  <div>toggle background color 3</div>
+  <div>toggle background color 4</div>
+  <br>
+  <hr>
+
+  <div id="colorChanger">
+    <button id="red">red</button>
+    <button id="yellow">Yellow</button>
+    <button id="blue">Blue</button>
+    <button id="green">Green</button>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>

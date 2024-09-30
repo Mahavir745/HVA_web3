@@ -43,13 +43,28 @@
 
 
 
-let object = {
-  name: "mahavir",
-  class: 12
-};
+// let object = {
+//   name: "mahavir",
+//   class: 12
+// };
 
-object.greet = function() {
-  return `Hellbo, my name is ${this.name} and I am in class ${this.class}.`;
-};
+// object.greet = function() {
+//   return `Hellbo, my name is ${this.name} and I am in class ${this.class}.`;
+// };
 
-console.log(object); 
+// console.log(object); 
+
+
+// alert("this is an alert")
+// console.log("hello")
+
+let btn = document.querySelector("#btn")
+
+btn.addEventListener("click",()=>{
+  console.log("clicked")
+})
+
+setTimeout(()=>{
+  console.log("another one")
+},4000)
+
