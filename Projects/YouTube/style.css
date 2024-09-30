@@ -163,12 +163,13 @@ header{
     height: 56px;
     display: flex;
     align-items: center;
+    /* border: 1px solid; */
     justify-content: right;
     .header_inner{
       width: 225px;
       height: 40px;
       display: flex;
-      justify-content: right;
+      /* justify-content: right; */
       align-items: center;
       /* border: 1px solid blue; */
 
@@ -204,8 +205,9 @@ header{
 }
 
 header{
-  position: sticky;
+  position: fixed;
   top: 0px;
+  /* border: 1px solid; */
 }
 
 .main_container{
@@ -218,6 +220,8 @@ header{
   #child1{
     overflow-y:scroll;
     position: fixed;
+    /* border: 1px solid; */
+    top:56px ;
     scroll-behavior: smooth;
     overflow-x: hidden;
 
