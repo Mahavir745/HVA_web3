@@ -5,6 +5,6 @@ if(a>b and a>c):
 elif(b>c):
   print(b)
 else:
-  print(a)
+  print(c)
 
 #todo: time complexity - O(1)

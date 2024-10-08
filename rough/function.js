@@ -58,13 +58,17 @@
 // alert("this is an alert")
 // console.log("hello")
 
-let btn = document.querySelector("#btn")
+// let btn = document.querySelector("#btn")
 
-btn.addEventListener("click",()=>{
-  console.log("clicked")
-})
+// btn.addEventListener("click",()=>{
+//   console.log("clicked")
+// })
 
-setTimeout(()=>{
-  console.log("another one")
-},4000)
+// setTimeout(()=>{
+//   console.log("another one")
+// },4000)
 
+
+//! iife
+
+((a,b)=> console.log("Hello Mahavir"))();
