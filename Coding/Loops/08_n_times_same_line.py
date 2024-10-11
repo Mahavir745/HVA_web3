@@ -3,9 +3,12 @@ n = int(input("How many times of print:- "))
 
 i = 0
 while(i<n):
-  print("*",end=" ")
+  if(i!=n-1):
+    print("*",end=" ")
+  else:
+    print("*",end="")
   i+=1
-print()
+
 
 #todo: time complexity - O(n)
 
