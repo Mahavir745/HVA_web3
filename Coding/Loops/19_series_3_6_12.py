@@ -5,7 +5,7 @@ i = 1
 a = 3
 while(i<=n):
   print(a,end=" ")
-  a*=3
+  a*=2
   i+=1
 
 print()

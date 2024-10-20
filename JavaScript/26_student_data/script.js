@@ -1,12 +1,13 @@
 // //todo: define and populate the student object
 
-// let student = {}
+let student = {}
 
-// student.name = "Mahavir"
-// student.email = "mahavir777kumar@gmail.com"
-// student.age = 19
+student.name = "Mahavir"
+student.email = "mahavir777kumar@gmail.com"
+student[9] = 19
 
-// console.log(student);
+console.log(student[9]);
+console.log(student)
 
 // //todo: update the student object
 
@@ -76,45 +77,45 @@
 
 // todo: Define and Use the student class:
 
-class Student {
+// class Student {
 
-  constructor(name,email,age,country,city,pin_code){
-     this.name = name;
-     this.email = email;
-     this.age = age;
-     this.address = {
-      country: country,
-      city: city,
-      pin_code:pin_code
-     };
-  }
+//   constructor(name,email,age,country,city,pin_code){
+//      this.name = name;
+//      this.email = email;
+//      this.age = age;
+//      this.address = {
+//       country: country,
+//       city: city,
+//       pin_code:pin_code
+//      };
+//   }
 
-  greet(){
-    return "hello "+this.name;
-  }
-  getFullAddress(){
-    // const {country,city,pin_code} = this.address
-    const country = this.address.country;
-    const city = this.address.city;
-    const pin_code = this.address.pin_code;
+//   greet(){
+//     return "hello "+this.name;
+//   }
+//   getFullAddress(){
+//     // const {country,city,pin_code} = this.address
+//     const country = this.address.country;
+//     const city = this.address.city;
+//     const pin_code = this.address.pin_code;
     
-    return `country: ${country} city: ${city} pin code: ${pin_code}`
-  }
-}
+//     return `country: ${country} city: ${city} pin code: ${pin_code}`
+//   }
+// }
 
-const student = new Student("mahavir","@kumar",19,"india","dhanbad",828105)
-// console.log(student);
-// console.log(student.greet());
-// console.log(student.name);
-// console.log(student.getFullAddress());
+// const student = new Student("mahavir","@kumar",19,"india","dhanbad",828105)
+// // console.log(student);
+// // console.log(student.greet());
+// // console.log(student.name);
+// // console.log(student.getFullAddress());
 
 
-//todo: Create and log Student Object:- store an another student data:
+// //todo: Create and log Student Object:- store an another student data:
 
-const student2= new Student("kumar","I@veer",19,"India","Jharkhand",828104)
-// console.log(student);
+// const student2= new Student("kumar","I@veer",19,"India","Jharkhand",828104)
+// // console.log(student);
 
-//todo: Call the greet method and getfulladress method on student objects:
+// //todo: Call the greet method and getfulladress method on student objects:
 
-console.log(student2.greet());
-console.log(student2.getFullAddress());
+// console.log(student2.greet());
+// console.log(student2.getFullAddress());

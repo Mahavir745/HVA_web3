@@ -1,0 +1,3 @@
+[submodule "trivia_game"]
+	path = trivia_game
+	url = https://github.com/Mahavir745/trivia_game
