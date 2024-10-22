@@ -2,27 +2,28 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact form</title>
   </head>
   <body>
     <h2>Contact Form</h2>
     <form action="#" method="post">
-      <label>Full Name:</label>
-      <input type="text" name="fullname">
+      <label for="name">Full Name:</label>
+      <input type="text" name="fullname" id="name">
       <br>
-      <label>Email Address:</label>
-      <input type="email" name="email">
+      <label for="email">Email Address:</label>
+      <input type="email" name="email" id="email">
       <br>
-      <label>Gender:</label>
-      <input type="radio" name="gender" value="male">
-      <label>Male</label>
-      <input type="radio" name="gender" value="female">
-      <label>Female</label>
+      <label for="gender">Gender:</label>
+      <input type="radio" name="gender" value="male" id="male">
+      <label for="male">Male</label>
+      <input type="radio" name="gender" value="female" id="female">
+      <label for="female">Female</label>
       <br>
-      <label>Subscribe to Newsletter</label>
-      <input type="checkbox" name="newsletter">
+      <label for="newsletter">Subscribe to Newsletter</label>
+      <input type="checkbox" name="newsletter" id="newsletter">
       <br>
-      <button type="submit">submit</button>
+      <button type="submit">Submit</button>
     </form>
   </body>
 </html>
