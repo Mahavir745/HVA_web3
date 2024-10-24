@@ -1,18 +1,25 @@
-.inline-container{
+.inline-container {
   text-align: center;
+}
+
+.inline-element {
   border: 1px solid #007BFF;
   padding: 5px;
-  margin: auto;
+  margin: 0 5px; 
 }
 
-.inline-block-container{
+.inline-block-container {
   text-align: center;
-  display: inline-block;
+}
+
+.inline-block-element {
+  display: inline-block; 
   border: 1px solid #FF5733;
   padding: 10px;
+  margin: 0 5px; 
 }
 
-.block-element{
+.block-element {
   margin: 10px auto;
   width: 200px;
   border: 2px solid #333;

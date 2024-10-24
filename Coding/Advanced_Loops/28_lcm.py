@@ -17,4 +17,4 @@ else:
 
 lcm = lcm/hcf
 print(lcm)
-# todo: time-complexity: O(a log b) 
+# todo: time-complexity: O(log(min(a,b))) 

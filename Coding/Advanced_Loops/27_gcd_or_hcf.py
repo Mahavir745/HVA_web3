@@ -11,4 +11,4 @@ if(a!=0):
 else:
   print(b)
 
-# todo: time-complexity: O(a log b)
+# todo: time-complexity: O(log(min(a,b)))

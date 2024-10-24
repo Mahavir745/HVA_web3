@@ -16,7 +16,15 @@
   margin: 5px;
 }
 
-.Independent-box-1{
+.independent-box-1{
+  border: 2px dotted #00CC66;
+  padding: 10px;
+  margin: 15px 0;
+  
+}
+
+
+.independent-box-2{
   border: 2px dotted #FFCC00;
   padding: 10px;
   margin: 15px 0;
