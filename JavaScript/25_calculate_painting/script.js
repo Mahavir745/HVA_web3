@@ -15,7 +15,7 @@ function areaOfTriangle(base, height) {
 //todo: Define calculatePaintingCost Function:
 
 function calculatePaintingCost(dimension1, dimension2, calculateArea) {
-    const costPerUnit = 160;
+    const costPerUnit = 2;
 
     let area = calculateArea(dimension1, dimension2);
 

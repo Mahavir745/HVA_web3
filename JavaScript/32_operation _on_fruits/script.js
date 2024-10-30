@@ -1,71 +1,57 @@
-let fruits = ['apple',"banana","cherry","date","pineapple"]
-
-// fruits.forEach(function(ele){
-//   let capital = ele[0].toUpperCase()
-//   let lower = ele[0].toLocaleLowerCase()
-//   let result = ele.replace(lower,capital)
-//   console.log(result);
-// })
-
-// fruits.forEach((ele)=>{
-//   let capital = ele[0].toUpperCase()
-//   let lower = ele[0].toLocaleLowerCase()
-//   let result = ele.replace(lower,capital)
-//   console.log(result);
-// })
-
-//todo: calculate total characters using forEach()
-
-// fruits.forEach(function(ele){
-// let totalCharacters = 0
-
-//   for(let i of ele){
-//     totalCharacters++
-//   }
-//   console.log(`${ele} : ${totalCharacters}`);
-// })
-
-//todo: Iterate and Create a new modified array using map():
-
-// let reversedFruits = fruits.map(function(ele){
-//   let reverse = ele.split("").reverse().join("")
-//   return reverse
-// })
-// console.log(reversedFruits);
-
-// let reversedFruits = fruits.map((ele)=>{
-//   let reverse = ele.split("").reverse().join("")
-//   return reverse
-// })
-// console.log(reversedFruits);
-
-//todo: iterate and create a new filtered array using filter():
-
-// let longFruits = fruits.filter(function(ele){
-//     let length = ele.length
-//     if(length>5){
-//       return ele
-//     }
-// })
-
-// console.log(longFruits);
+let fruits = ['apple', "banana", "cherry", "date", "pineapple"];
 
 
-// let longFruits = fruits.filter((ele)=>{
-//   let length = ele.length
-//   if(length>5){
-//     return ele
-//   }
-// })
+fruits.forEach(function(ele) {
+  let result = ele.toUpperCase();
+  console.log(result);
+});
 
-// console.log(longFruits);
+fruits.forEach((ele) => {
+  let result = ele.toUpperCase();
+  console.log(result);
+});
 
-//todo: create a new filtered and modified array using filter() and map()
+// Calculate total characters using forEach()
 
-let fruitIna = fruits.filter(function(ele){
-  if(ele.includes('a')) return ele;
-})
+let totalCharacters = 0; 
+fruits.forEach(function(ele) {
+  totalCharacters += ele.length; 
+  console.log(`${ele} : ${ele.length}`);
+});
+console.log(`Total characters across all fruits: ${totalCharacters}`);
 
-let aFruitsUpper = fruitIna.map(function(ele){
-  console.log(ele.toUpperCase());
-})
+// Create a new modified array using map()
+
+let reversedFruits = fruits.map(function(ele) {
+  return ele.split("").reverse().join("");
+});
+console.log(reversedFruits);
+
+reversedFruits = fruits.map((ele) => {
+  return ele.split("").reverse().join("");
+});
+console.log(reversedFruits);
+
+// Create a new filtered array using filter()
+
+let longFruits = fruits.filter(function(ele) {
+  return ele.length > 5; 
+});
+console.log(longFruits);
+
+longFruits = fruits.filter((ele) => {
+  return ele.length > 5; 
+});
+console.log(longFruits);
+
+// Create a new filtered and modified array using filter() and map()
+
+let fruitIna = fruits.filter(function(ele) {
+  return ele.includes('a');
+});
+
+let aFruitsUpper = fruitIna.map(function(ele) {
+  return ele.toUpperCase();
+});
+
+console.log(aFruitsUpper);

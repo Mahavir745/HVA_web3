@@ -9,11 +9,16 @@ function multiplyNumbers(num1,num2){
 }
 
 function subtractNumbers(num1,num2){
-  return num2 - num1
+  return num1 - num2
 }
 
 function divideNumbers(num1,num2){
-  return num1/num2
+  if(num2 !=0){
+    return num1/num2
+  }
+  else{
+    return "not divisible by 0 "
+  }
 }
 
 // todo: define performArithmetic Function:
