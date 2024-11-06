@@ -1,8 +1,5 @@
-
-
 class Product {
-  
-  constructor(id,name,price,quantity){
+  constructor(id, name, price, quantity) {
     this.id = id;
     this.name = name;
     this.price = price;
@@ -10,74 +7,72 @@ class Product {
   }
 }
 
-
 let inventory = [
-  new Product(1,"mouse",250, 4),
+  new Product(1, "mouse", 250, 4),
   new Product(2, "keyboard", 350, 5),
   new Product(3, "Ssd", 2600, 2),
-  new Product(4,"speaker", 3300, 3)
-]
+  new Product(4, "speaker", 3300, 3),
+];
 
 
-
-inventory.forEach((ele)=>{
-  console.log(`${ele.name} - ${ele.price}(${ele.quantity})`);
-  
-})
-
-function addProduct(id,name,price,quantity){
-   let newadd = new Product(id,name,price,quantity)
-   inventory.push(newadd)
-}
-
-
-
-addProduct(5,"touchpen",200, 3)
-// console.log(inventory);
-
-
-//todo: Define the update Product Function:
-
-function updateProduct(productId,quantity){
-  const product = inventory.find((ele)=>{
-    return ele.id === productId
-    
-  })
-  
-  if(product){
-    product.quantity = quantity;
-  }
-}
-
-updateProduct(2, 6)
-console.log(inventory);
-
-
-//todo: update product by using map
-function updateProductWithMap(productId, quantity) {
-
-  inventory = inventory.map((ele)=>{
-    if(ele.id === productId){
-      ele.quantity = quantity
-    }
-    return ele
+function displayProducts() {
+  inventory.forEach((ele) => {
+    console.log(`${ele.name} - Rs ${ele.price} (${ele.quantity})`);
   });
 }
 
-updateProductWithMap(2,15)
+displayProducts();
 
-console.log(inventory);
-
-
-// //todo: Define the remove Product Function:
-
-// function removeProduct(productId){
-//   inventory = inventory.filter((ele)=>{
-//    return ele.id !== productId
-//   })
-// }
-
-// removeProduct(3)
+function addProduct(id, name, price, quantity) {
+  const newProduct = new Product(id, name, price, quantity);
+  inventory.push(newProduct);
+  return inventory;
+}
 
 
-// console.log(inventory);
+addProduct(5, "touchpen", 200, 3);
+displayProducts();
+
+
+function updateProduct(productId, quantity) {
+  const product = inventory.find((ele) => ele.id === productId);
+  
+  if (product) {
+    product.quantity = quantity;
+  } else {
+    console.error(`Product with ID ${productId} not found.`);
+  }
+}
+
+
+updateProduct(2, 6);
+displayProducts();
+
+
+function updateProductWithMap(productId, quantity) {
+  inventory = inventory.map((ele) => {
+    if (ele.id === productId) {
+      ele.quantity = quantity;
+    }
+    return ele;
+  });
+}
+
+
+updateProductWithMap(2, 15);
+displayProducts();
+
+
+function removeProduct(productId) {
+  const initialLength = inventory.length;
+  inventory = inventory.filter((ele) => ele.id !== productId);
+  
+  if (inventory.length === initialLength) {
+    console.error(`Product with ID ${productId} not found for removal.`);
+  }
+}
+
+
+removeProduct(3);
+displayProducts();
+
