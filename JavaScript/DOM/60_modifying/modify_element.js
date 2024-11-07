@@ -1,11 +1,11 @@
-let btn = document.querySelector("button");
+let btn = document.querySelector("#btn1");
 
 btn.addEventListener("click",()=>{
-  let para = document.querySelector("p");
+  let para = document.querySelector("#btn1_para");
   para.textContent = "Text has been changed!"
 })
 
-let div = document.querySelector("div");
+let div = document.querySelector("#hover");
 
 div.addEventListener("mouseover", ()=>{
   div.style.cssText="background-color:yellow;color:blue;"

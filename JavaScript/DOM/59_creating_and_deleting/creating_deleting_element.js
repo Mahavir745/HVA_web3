@@ -19,8 +19,13 @@ let removeButton = document.querySelector("#removeButton")
 function removeButtonItem(){
 
   let list = document.querySelector("#list")
-  list.removeChild(list.lastElementChild) //! List ke last element ko target krne ke liye lastElementChild
-  i--
+  if(list.lastElementChild){
+      list.removeChild(list.lastElementChild) //! List ke last element ko target krne ke liye lastElementChild
+      i--
+  } else {
+    console.log("No items to remove!");
+  }
+
    
 };
 
