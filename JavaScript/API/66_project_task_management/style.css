@@ -65,7 +65,7 @@ button:hover {
 .main_container {
   width: 1905px;
   height: 100vh;
-
+  
   .child {
     width: calc(1905px / 3);
     height: 100%;
@@ -305,7 +305,7 @@ button:hover {
     left: 643.3px;
 
     form {
-      width: 500px;
+      width:400px;
       margin: 20px auto;
       /* border-radius: 8px; */
       padding: 8px;
@@ -331,7 +331,7 @@ button:hover {
 
       .form_child {
         /* border: 1px solid red; */
-        background-image: linear-gradient(120deg, white, pink);
+        background-image: linear-gradient(120deg, #0a446b 160px, skyblue 10px);
         border-radius: 12px;
         height: auto;
         padding: 10px 0px 10px 20px;
@@ -339,16 +339,14 @@ button:hover {
         /* background-image: linear-gradient(120deg,#0a446b,skyblue); */
 
         input {
-          width: 80%;
+          width: 90%;
           height: 46px;
-          border-radius: 12px;
           border: none;
-          box-shadow: 1px 1px 2px;
           padding-left: 20px;
           color: var(--bg-clr5);
           font-weight: 600;
-          font-size: 18px;
-          opacity: 70%;
+          font-size: 12px;
+          opacity: 80%;
         }
 
         input:focus {
@@ -363,11 +361,11 @@ button:hover {
         }
 
         textarea {
-          width: 80%;
+          width: 90%;
           height: 100px;
-          border-radius: 12px;
+          /* border-radius: 12px; */
           border: none;
-          box-shadow: 1px 1px 2px;
+          /* box-shadow: 1px 1px 2px; */
           resize: none;
           padding: 8px 8px 0px 20px;
           color: var(--bg-clr5);
@@ -383,15 +381,15 @@ button:hover {
 
 
         select {
-          width: 80%;
+          width: 90%;
           height: 40px;
           padding-left: 20px;
-          border-radius: 12px;
+          /* border-radius: 12px; */
           border: none;
-          font-size: 18px;
-          box-shadow: 1px 1px 2px;
+          font-size: 14px;
+          /* box-shadow: 1px 1px 2px; */
           opacity: 70%;
-          color: var(--bg-clr5);
+          color: var(--bg-clr6);
           font-weight: 600;
         }
 
@@ -403,18 +401,19 @@ button:hover {
         button {
           width: 40%;
           height: 40px;
-          border-radius: 12px;
+          /* border-radius: 12px; */
           border: none;
-          box-shadow: 1px 1px 2px;
-          background-color: #aadffc;
+          /* box-shadow: 1px 1px 2px; */
+          background-color: #fbf9fd;
           font-weight: 800;
-          color: blue;
+          color: rgb(22, 25, 26);
           transition: scale .3s linear;
         }
 
         button:hover {
           scale: .95;
-          background-color: greenyellow;
+          color: white;
+          background-color: rgb(15, 149, 226);
         }
       }
     }
@@ -531,7 +530,7 @@ button:hover {
         flex-shrink: 0;
         box-shadow: 1px 1px 2px;
         border-radius: 4px 8px 1px 8px;
-        background-image: linear-gradient(120deg, white, red, pink);
+        background-image: linear-gradient(120deg, white, pink);
 
         .p1 {
           width: 420px;
